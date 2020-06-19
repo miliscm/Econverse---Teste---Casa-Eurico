@@ -1,0 +1,623 @@
+body {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: "lato";
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: black;
+}
+
+.header-list {
+  display: flex;
+  justify-content: center;
+}
+.header-list li {
+  list-style: none;
+  padding: 8px 93px 9px 0;
+  text-transform: uppercase;
+  font-weight: light;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  line-height: 10px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+.nav-header a {
+  padding-right: 35px;
+}
+.nav-header .nav-header-seach {
+  font-size: 12px;
+  width: 140px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.nav-header .nav-header-seach span::after {
+  content: "";
+}
+.nav-categoria {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-categoria li {
+  list-style: none;
+  padding-right: 62px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  padding-bottom: 20px;
+}
+.banner {
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+.image-banner {
+  margin: -40px;
+  position: relative;
+  width: 90%;
+  max-width: 1024px;
+  height: 50vw;
+}
+.image-banner img {
+  position: absolute;
+  width: 130%;
+  top: 80px;
+  height: 70%;
+  transition: 800ms;
+}
+.image-banner img.selected {
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  left: 15%;
+  height: 80%;
+  object-fit: cover;
+  z-index: 1;
+}
+.internal-text {
+  position: absolute;
+  z-index: 10;
+  left: 700px;
+  top: 27%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text h1 {
+  margin: 0 auto;
+  color: white;
+  font-size: 89px;
+  line-height: 111px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  font-weight: black;
+  margin-bottom: 5px;
+}
+.text h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+  margin: -10px;
+}
+.text p {
+  width: 280px;
+  text-align: left;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 23px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.select-cat {
+  display: flex;
+}
+.select-cat a {
+  color: white;
+  border: 1px solid white;
+  padding: 15px 64px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.select-cat a:hover {
+  background-color: white;
+  color: black;
+}
+.before-after {
+  position: absolute;
+  right: 12px;
+  top: 70%;
+  z-index: 11;
+  display: flex;
+}
+.before-after img {
+  margin: 0 10px;
+  padding: 0;
+}
+.before-after img:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.ano-2020 {
+  position: absolute;
+  right: -100px;
+  top: 26%;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ano-2020 {
+  position: absolute;
+  right: -100px;
+  top: 26%;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ano-2020 img {
+  padding-right: 20px;
+}
+.ano-2020 span {
+  color: white;
+  font-size: 20px;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: white;
+}
+.grid-section {
+  display: flex;
+  justify-content: center;
+}
+.grid-section div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.grid-section div img {
+  padding-bottom: 20px;
+}
+.grid-section .margin-top {
+  margin-top: 70px;
+}
+
+.grid-section .card-img {
+  position: absolute;
+  top: 200px;
+  width: 200px;
+  left: 22%;
+  text-align: center;
+}
+.grid-section .card-img p {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.grid-section .card-img h3 {
+  margin-top: -20px;
+  margin-bottom: 34px;
+  font-size: 60px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.grid-section .woman {
+  margin-left: -40px;
+}
+
+.grid-section .card-img a {
+  color: white;
+  text-decoration: none;
+  border: 0.5px solid white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 15px 60px;
+}
+.grid-section .card-img-pq {
+  position: absolute;
+  top: 40px;
+  left: 22%;
+  text-align: center;
+}
+.grid-section .card-img-pq p {
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.grid-section .card-img-pq h3 {
+  margin-top: -20px;
+  margin-bottom: 34px;
+  font-size: 70px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.1em;
+}
+.grid-section .card-img-pq a {
+  color: white;
+  text-decoration: none;
+  border: 0.5px solid white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 15px 60px;
+}
+.card-img-pq a:hover,
+.card-img a:hover {
+  background-color: white;
+  color: black;
+}
+.mais-vendidos {
+  max-width: 1220px;
+  height: auto;
+  margin-bottom: 70px;
+  margin-inline-start: auto;
+}
+.mais-vendidos .cabecalho {
+  text-align: center;
+}
+.mais-vendidos .cabecalho h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 0.3em;
+  font-weight: normal;
+  margin-bottom: 21px;
+}
+.mais-vendidos .cabecalho p {
+  display: inline;
+  font-size: 12px;
+  letter-spacing: 0.3em;
+  font-style: italic;
+  text-transform: uppercase;
+  padding-left: 10px;
+
+  position: relative;
+}
+.mais-vendidos .cabecalho p.selected {
+  font-weight: bold;
+  color: #d82532;
+}
+.mais-vendidos .cabecalho p.selected::after {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 35px;
+  width: 25px;
+  height: 2px;
+  z-index: 2;
+  background-color: #d82532;
+}
+.grid-mais-vendidos {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mais-vendidos-card-desc {
+  margin: 15px;
+  text-align: center;
+}
+.mais-vendidos-card-desc p {
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+.mais-vendidos-card {
+  opacity: 1;
+}
+.mais-vendidos-card .comprar {
+  padding: 25px;
+}
+.mais-vendidos-card .comprar p {
+  text-align: center;
+  border: 1px solid black;
+  padding: 16px 0;
+  /* opacity: 0; */
+}
+.mais-vendidos-card:hover {
+  box-shadow: 3px 13px 10px 8px #d4d2d2;
+}
+.grid-section.grid-section-3 {
+  margin-bottom: 200px;
+}
+.grid-section.grid-section-3 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.grid-section.grid-section-3 .card-img a {
+  width: 100px;
+}
+.grid-section.grid-section-3 .cards-grid-section {
+  transition: 400ms;
+}
+.grid-section.grid-section-3 .cards-grid-section:hover {
+  margin-top: -80px;
+}
+
+.grid-section.grid-section-3 .card-img {
+  top: 110px;
+  width: 300px;
+  left: 10px;
+
+  display: inline-block;
+}
+.grid-section.grid-section-3 .card-img.card-img-2 p {
+  font-size: 29px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding-bottom: 32px;
+}
+.grid-section.grid-section-3 .card-img.card-img-1 h3 {
+}
+.grid-section.grid-section-3 .card-img.card-img-2 h3,
+.grid-section.grid-section-3 .card-img.card-img-1 h3,
+.grid-section.grid-section-3 .card-img.card-img-3 h3 {
+  font-size: 50px;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+}
+.enderecos-lojas {
+  max-width: 940px;
+  background-color: #f2f2f2;
+  height: 380px;
+  margin: auto;
+  position: relative;
+}
+.enderecos-lojas .enderecos-setas {
+  position: absolute;
+  right: 140px;
+  top: 70%;
+  z-index: 11;
+}
+.enderecos-lojas .enderecos-setas img {
+  margin-right: 10px;
+  transition: 400ms;
+}
+.enderecos-lojas .enderecos-setas img:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.enderecos-lojas .grupo-eurico {
+  position: absolute;
+  top: 90%;
+  left: 250px;
+}
+
+.enderecos-lojas .imagens-endereco img {
+  position: absolute;
+  height: 380px;
+}
+.enderecos-lojas .imagens-endereco img.select {
+  left: 200px;
+  top: -40px;
+  height: 100%;
+  position: relative;
+}
+.enderecos-lojas .dados-endereco {
+  position: absolute;
+  right: 50px;
+  top: 40px;
+}
+.enderecos-lojas .dados-endereco h2 {
+  font-weight: normal;
+  margin-bottom: 40px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.enderecos-lojas .dados-endereco h2::after {
+  position: absolute;
+  right: 75px;
+  top: 40px;
+  content: "";
+  width: 60px;
+  height: 2px;
+  z-index: 2;
+  background-color: #d82532;
+}
+.enderecos-lojas .dados-endereco p {
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+}
+.follow-us {
+  margin-top: 200px;
+  max-width: 1220px;
+  height: auto;
+  margin-bottom: 70px;
+}
+.follow-us .cabecalho {
+  text-align: center;
+}
+.follow-us .cabecalho h3 {
+  text-transform: uppercase;
+  font-size: 25px;
+  letter-spacing: 0.3em;
+  font-weight: normal;
+  margin-bottom: 21px;
+}
+.follow-us .cabecalho p {
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+.rede-social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rede-social img {
+  /* object-fit: cover; */
+  position: relative;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+}
+.rede-social img:hover {
+  transform: scale(1.1);
+  z-index: 3;
+}
+.sobre {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.sobre .sobre-cabecalho h3 {
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3em;
+  margin-bottom: 36px;
+}
+.sobre .sobre-cabecalho p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+  margin-bottom: 44px;
+}
+.informacao {
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: 347px 347px 1fr;
+  gap: 44px;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.informacao .newsletter {
+  text-align: center;
+}
+.informacao .newsletter h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+}
+.informacao .newsletter p {
+  text-align: left;
+  font-size: 12px;
+  font-weight: lighter;
+  letter-spacing: 0.1em;
+  line-height: 20px;
+}
+.informacao .email {
+  margin-top: 20px;
+}
+.informacao .email input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  opacity: 0.7;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  width: 347px;
+}
+.informacao .cadastro {
+  text-align: center;
+  margin-top: 20px;
+}
+.informacao .cadastro a {
+  border: 0.5px solid black;
+  padding: 15px 57px;
+  text-decoration: none;
+  transition: 400ms;
+  font-size: 12px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+.informacao .cadastro a:hover {
+  color: white;
+  background-color: black;
+  font-weight: normal;
+}
+.contatos {
+  max-width: 1224px;
+  display: grid;
+  grid-template-columns: 244px 244px 244px 260px 160px;
+  gap: 50px;
+  margin: 0;
+}
+.contatos h3 {
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.contatos p {
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  font-weight: lighter;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.contatos img {
+  margin-left: 10px;
+}
+footer {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 200px 700px 210px;
+  gap: 100px;
+  margin-top: 40px;
+}
+footer .redes a {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+footer .copy {
+  text-align: center;
+  font-size: 10px;
+  font-weight: lighter;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  margin-top: -10px;
+}
+footer .parceiro2 img {
+  margin-right: 8px;
+}
