@@ -303,7 +303,7 @@ a {
   font-style: italic;
   text-transform: uppercase;
   padding-left: 10px;
-
+  cursor: pointer;
   position: relative;
 }
 .mais-vendidos .cabecalho p.selected {
