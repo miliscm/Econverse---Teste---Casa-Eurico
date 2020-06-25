@@ -48,13 +48,18 @@ let comprimento = cabecalhos.getElementsByTagName("p").length;
 for (let i = 0; i < comprimento; i++) {
   cabeca[i].addEventListener("click", function () {
     cabeca[i].classList.add("selected");
-    if (
-      cabeca[i].nextElementSibling != null &&
-      cabeca[i].nextElementSibling.classList == "selected"
-    ) {
-      cabeca[i].nextElementSibling.classList.remove("selected");
-    } else {
-      cabeca[i - 1].classList.remove("selected");
-    }
+
+    cabeca[i].nextElementSibling != null &&
+    cabeca[i].nextElementSibling.classList == "selected"
+      ? cabeca[i].nextElementSibling.classList.remove("selected")
+      : cabeca[i - 1].classList.remove("selected");
+    // if (
+    //   cabeca[i].nextElementSibling != null &&
+    //   cabeca[i].nextElementSibling.classList == "selected"
+    // ) {
+    //   cabeca[i].nextElementSibling.classList.remove("selected");
+    // } else {
+    //   cabeca[i - 1].classList.remove("selected");
+    // }
   });
 }
