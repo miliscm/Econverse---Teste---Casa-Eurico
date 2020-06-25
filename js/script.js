@@ -30,9 +30,14 @@ function beforeImage() {
   imagem[currentImageIndex].classList.add("selected");
 }
 
-function style() {
-  document.getElementById("comprar").style.color = "rgba(0,0,0,1)";
-}
-function styleout() {
-  document.getElementById("comprar").style.color = "rgba(0,0,0,0)";
+let cards = document.querySelectorAll(".mais-vendidos-card");
+for (let card of cards) {
+  card.addEventListener("mouseover", function () {
+    let dados = card.getElementsByClassName("comprar");
+    dados[0].classList.add("active");
+  });
+  card.addEventListener("mouseout", function () {
+    let dados = card.getElementsByClassName("comprar");
+    dados[0].classList.remove("active");
+  });
 }

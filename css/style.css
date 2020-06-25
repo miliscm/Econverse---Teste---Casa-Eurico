@@ -5,6 +5,9 @@ body {
   font-family: "lato";
   box-sizing: border-box;
 }
+/* #comprar {
+  opacity: 0;
+} */
 h1,
 h2,
 h3,
@@ -339,13 +342,20 @@ a {
 }
 .mais-vendidos-card .comprar {
   padding: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+.mais-vendidos-card .comprar.active {
+  padding: 25px;
+  opacity: 1;
+  visibility: visible;
 }
 .mais-vendidos-card .comprar p {
   text-align: center;
   border: 1px solid black;
   padding: 16px 0;
-  /* opacity: 0; */
 }
+
 .mais-vendidos-card:hover {
   box-shadow: 3px 13px 10px 8px #d4d2d2;
 }
